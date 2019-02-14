@@ -1,14 +1,14 @@
 {
-  "main.css": "/gauravsoni1.github.io/static/css/main.5573a11b.chunk.css",
-  "main.js": "/gauravsoni1.github.io/static/js/main.d62c5cec.chunk.js",
-  "main.js.map": "/gauravsoni1.github.io/static/js/main.d62c5cec.chunk.js.map",
-  "runtime~main.js": "/gauravsoni1.github.io/static/js/runtime~main.d09a3f6d.js",
-  "runtime~main.js.map": "/gauravsoni1.github.io/static/js/runtime~main.d09a3f6d.js.map",
-  "static/js/2.d16a2668.chunk.js": "/gauravsoni1.github.io/static/js/2.d16a2668.chunk.js",
-  "static/js/2.d16a2668.chunk.js.map": "/gauravsoni1.github.io/static/js/2.d16a2668.chunk.js.map",
-  "index.html": "/gauravsoni1.github.io/index.html",
-  "precache-manifest.f7cbf89ab54739b39dcb473decd3f51d.js": "/gauravsoni1.github.io/precache-manifest.f7cbf89ab54739b39dcb473decd3f51d.js",
-  "service-worker.js": "/gauravsoni1.github.io/service-worker.js",
-  "static/css/main.5573a11b.chunk.css.map": "/gauravsoni1.github.io/static/css/main.5573a11b.chunk.css.map",
-  "static/media/logo.svg": "/gauravsoni1.github.io/static/media/logo.5d5d9eef.svg"
+  "main.css": "/portfolio/static/css/main.5573a11b.chunk.css",
+  "main.js": "/portfolio/static/js/main.a5166d0e.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.a5166d0e.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.0fad4c0f.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.0fad4c0f.js.map",
+  "static/js/2.d16a2668.chunk.js": "/portfolio/static/js/2.d16a2668.chunk.js",
+  "static/js/2.d16a2668.chunk.js.map": "/portfolio/static/js/2.d16a2668.chunk.js.map",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.92bb2e8a83b32343957a3ba42cbe95e9.js": "/portfolio/precache-manifest.92bb2e8a83b32343957a3ba42cbe95e9.js",
+  "service-worker.js": "/portfolio/service-worker.js",
+  "static/css/main.5573a11b.chunk.css.map": "/portfolio/static/css/main.5573a11b.chunk.css.map",
+  "static/media/logo.svg": "/portfolio/static/media/logo.5d5d9eef.svg"
 }
