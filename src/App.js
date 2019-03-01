@@ -28,16 +28,19 @@ const style = {
 class App extends Component {
   render() {
     return (
-      <>        
+      <>
+        {/* Head and Parallax */}
         <div className={classes.parallaxContainer}>
           <div style={style} />
           <div className={classes.overlay}>
-              <h1>Web Developer</h1>
-              <h3>Developing Web, Line by Line</h3>
+            <h1>Web Developer</h1>
+            <h3>Developing Web, Line by Line</h3>
           </div>
         </div>
-        <Header></Header>
-        <div className={classes.aboutMe}>
+        <Header />
+
+        {/* Tech stack section */}
+        <div className={[classes.aboutMe, classes.techStackSection].join(" ")}>
           <span className={classes.header}>Tech Stack</span>
           <span className={classes.subHeader}>Knowledge is power !!</span>
           <hr />
@@ -46,7 +49,42 @@ class App extends Component {
             <TechStack type="BackEnd Stack" stack={stacks.backEnd} />
             <TechStack type="DevTools Stack" stack={stacks.devTools} />
           </div>
+          <svg
+            width="100%"
+            height="75px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <path d="m 0 100 l 100 -100 v 100 h -100 "></path>
+          </svg>
         </div>
+
+        {/* Recent work section */}
+
+        <div className={[classes.aboutMe, classes.recentWork].join(" ")}>
+          <span className={classes.header}>Recent Works</span>
+          <span className={classes.subHeader}>Keep learning, Keep helping</span>
+          <hr />
+          <div
+            className={[classes.aboutMeBody, classes.aboutMeRecentWork].join(
+              " "
+            )}
+          >
+            <Work />
+            <Work />
+            <Work />
+          </div>
+          <svg
+            width="100%"
+            height="75px"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <path d="m 0 100 l 100 -100 v 100 h -100 "></path>
+          </svg>
+        </div>
+
+        {/* About me Section */}
         <div className={classes.aboutMe}>
           <span className={classes.header}>About Me</span>
           <span className={classes.subHeader}>
@@ -70,45 +108,6 @@ class App extends Component {
               In free time I like to workout and try out new tech stuff.
               <Emoji text=":punch:" />{" "}
             </p>
-          </div>
-        </div>
-        <div className={classes.aboutMe}>
-          <span className={classes.header}>Recent Works</span>
-          <span className={classes.subHeader}>Keep learning, Keep helping</span>
-          <hr />
-          <div
-            className={[classes.aboutMeBody, classes.aboutMeRecentWork].join(
-              " "
-            )}
-          >
-            <Work />
-            <Work />
-            <Work />
-          </div>
-        </div>
-        <div className={classes.aboutMe}>
-          <span className={classes.header}>Let's work !!</span>
-          <span className={classes.subHeader}>
-            Don't wait for opportunity, create them !!
-          </span>
-          <hr />
-          <div
-            className={[classes.aboutMeBody, classes.aboutMeFooter].join(" ")}
-          >
-            <ul>
-              <li>
-                <img src={imageIcon["gitIcon"]} />
-              </li>
-              <li>
-                <img src={imageIcon["facebookIcon"]} />
-              </li>
-              <li>
-                <img src={imageIcon["linkedinIcon"]} />
-              </li>
-              <li>
-                <img src={imageIcon["emailIcon"]} />
-              </li>
-            </ul>
           </div>
         </div>
       </>

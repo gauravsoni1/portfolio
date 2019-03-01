@@ -1,9 +1,30 @@
 .workContainer{
   width: 400px;
-  height: 400px;
+  height: 200px;
+  background-color: #ffff;
+  margin: 5px;
+  box-shadow: 0 3px 12px 2px #3c3d51;
 }
 
-.greenBlock{
-  background-color: lightgreen;
-  border: 1px solid grey;
+.heading{
+  margin: 10px;
+  span{
+    font-size: 1.5rem;
+    color: blue;
+  }
+}
+
+.description{
+  margin: 10px;
+  height: 50%;
+}
+
+.footer{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  img{
+    height: 35px;
+    margin-right: 10px;
+  }
 }
