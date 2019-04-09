@@ -3,20 +3,19 @@ import * as imageIcon from "../../assets/images/index";
 
 import style from "./work.module.scss";
 
-const Work = () => {
+const Work = (props) => {
   return (
     <div className={style.workContainer}>
       <div className={style.heading}>
-        <span>My Profile Website</span>
+        <span>{props.title}</span>
       </div>
       <div className={style.description}>
         <span>
-          Website to display all professional activities related to me on a single page.Learn about how SVG works, and creating custom SVG shapes.
-          Website created in ReactJS.
+          {props.children}
         </span>
       </div>
       <div className={style.footer}>
-        <a href="https://github.com/gauravsoni1/portfolio" target="_blank">
+        <a href={props.gitUrl} target="_blank">
           <img
             src={imageIcon["gitIcon"]}
           />

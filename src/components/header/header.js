@@ -1,47 +1,35 @@
-import React from "react";
+import React, { Component } from "react";
 import classes from "./header.module.scss";
 
-import * as imageIcon from "../../assets/images/index";
-import cv from '../../assets/gaurav_cv.pdf';
+import menuIcon from "../../assets/images/menu.png";
+import HeaderNavButtons from './headerNavButtons';
 
-const Header = () => {
-  return (
-    <div className={classes.header}>
-      <span> Gaurav Soni</span>
-      <div className={classes.aboutMeBody}>
-        <ul>
-          <li>
-            <a href="https://github.com/gauravsoni1" target="_blank">
-              <img
-                src={imageIcon["gitIcon"]}
-                href="https://github.com/gauravsoni1"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/gauravs1990" target="_blank">
-              <img src={imageIcon["facebookIcon"]} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gaurav-soni-1a916a53/" target="_blank">
-              <img src={imageIcon["linkedinIcon"]} />
-            </a>
-          </li>
-          <li>
-            <a href="mailto:gaurav@allcadservices.com" target="_top">
-              <img src={imageIcon["emailIcon"]} />
-            </a>
-          </li>
-          <li>
-            <a href={cv} target="_blank">
-              <img src={imageIcon["cvIcon"]} />
-            </a>
-          </li>
-        </ul>
+class Header extends Component {
+  state = {
+    isResponsive: null
+  };
+
+  toggleMenu = () => {
+    this.setState(prev => {
+      if (prev.isResponsive === null)
+        return { isResponsive: classes.responsive };
+      else return { isResponsive: null };
+    });
+  };
+
+  render() {
+    return (
+      <div className={classes.header}>
+        <div className={classes.headerTitleRow}>
+          <p> Gaurav Soni</p>
+          <img onClick={this.toggleMenu} src={menuIcon} alt="Menu" />
+        </div>
+        <div className={[classes.headerButtons, this.state.isResponsive].join(" ")}>
+          <HeaderNavButtons />
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Header;

@@ -8,7 +8,6 @@ const TechStack = props => {
       <h2>{props.type}</h2>
       <ul>
         {props.stack.map(item => {
-          const angItem = "angularIcon";
           return (
             <li key={item.text}>
               <img src={imageIcon[item.icon]} alt={item.text} />

@@ -12,14 +12,15 @@ $heading-size: 4rem;
 .overlay{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0px;
   left: 0px;
   background-color: $overlay-color;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
   h1{
     font-size: $heading-size;
     color: rgb(250, 34, 91)
@@ -53,10 +54,16 @@ $heading-size: 4rem;
     color: #ffff;
     width: 100px;
   }
+  .aboutMeRecentWork{
+    text-align: center;
+  }
+
   .aboutMeBody {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    width: 90%;    
+    width: 90%;
     ul {
       list-style: none;
       display: flex;
@@ -74,15 +81,19 @@ $heading-size: 4rem;
           max-height: 35px;
         }
       }
+    }    
+  }
+
+  @media screen and (min-width:650px){
+    .aboutMeBody{
+      flex-direction: row;
+      align-items: flex-start;
     }
   }
+
   .aboutMeDetails{
     flex-direction: column;
     color: #dbdbdb;
-  }
-
-  .aboutMeRecentWork{
-    justify-content: center;
   }
 
   .aboutMeFooter ul{
