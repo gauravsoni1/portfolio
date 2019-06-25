@@ -2,7 +2,7 @@
   "name": "gauravsoni1.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gauravsoni1.github.io/portfolio",
+  "homepage": "https://gauravsoni.me",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
