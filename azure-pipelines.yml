@@ -23,9 +23,9 @@ steps:
 - task: InstallSSHKey@0
   inputs:
     knownHostsEntry: '[77.104.168.233]:18765 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCZLT2zpfpmX6L9NfTmdrOCYs/iOps7Gw27S1iIPwWtmKZfghBRRuPg6hmM0iEJuHdWBgbkkjKWzG4Kf5+VVVMQ='
-    sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC23OO6b+EmyOGF6rbTU6lPYaPassXe2aA3pCD2lQxmKIkkmAbMA/Vm79sV7xlKDrKDz05obQzXmX+7NRVuJtZ/3Fr2S9zUgQ6bJEgqsp9w3pxWQYx5D+WrYhsP3hY3hSfUxrz9fTJYy/zJoXi9uGUY7PBesmPK8F50wxBWPhCpm8FTzx3+Pz4EDaEQ7JMHVyp3z3ZS/dUFWJ8lxf8S975tnLtPOzc+EC/zTK6Xx6dNJw4gUWNW/9xaIbjY1TQ/nqLG3kVtTMJVD1uj10TOCRhe207rnIfw9M6Z9uESiBg1FWaqsVAUz7VdwOs8Ll3b4OeqtIJDPHFvIZeRgFhlr5RT gauravsoni@Gauravs-MacBook-Pro-2.local'
-    sshKeySecureFile: 'gaurav-portfolio'
-
+    sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCw/x2PnW8mnXYkWJefXPw3K3LvygpkpHJ/kBNpZruL9eQclVZjnvpfVERWq+TPM022nJtnydoC0AYqnx4pvJrUG7oPTSpxLKm4rAv4uLhY18wBae/NwnF4FsiuzUbn/QGPN17Jk7YpzZxpDTIpBevbO4SbopQi8HKVsY1uPdFuyc2v5pF3qH85lui0Tn6Uv+JvNEF9D9GLlCmwzWtIhVhk3vDxHQUKcWIjkz8HzNDkL8jN20UxRNEMqIQBzc2wvq+yBf/AZ4uV1oPKyFKTq6PtMd4ZHthq6cQCjH7Zc24aiF0GBccP4qlXBnAaaJsAEhW4f2UyRGdjCDUfPRwKUAXb gauravsoni@Gauravs-MacBook-Pro-2.local'
+    sshKeySecureFile: 'portfolio-gaurav'
+    
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'gauravsoni.me'
