@@ -1,0 +1,34 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+
+- task: InstallSSHKey@0
+  inputs:
+    knownHostsEntry: '[77.104.168.233]:18765 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCZLT2zpfpmX6L9NfTmdrOCYs/iOps7Gw27S1iIPwWtmKZfghBRRuPg6hmM0iEJuHdWBgbkkjKWzG4Kf5+VVVMQ='
+    sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCw/x2PnW8mnXYkWJefXPw3K3LvygpkpHJ/kBNpZruL9eQclVZjnvpfVERWq+TPM022nJtnydoC0AYqnx4pvJrUG7oPTSpxLKm4rAv4uLhY18wBae/NwnF4FsiuzUbn/QGPN17Jk7YpzZxpDTIpBevbO4SbopQi8HKVsY1uPdFuyc2v5pF3qH85lui0Tn6Uv+JvNEF9D9GLlCmwzWtIhVhk3vDxHQUKcWIjkz8HzNDkL8jN20UxRNEMqIQBzc2wvq+yBf/AZ4uV1oPKyFKTq6PtMd4ZHthq6cQCjH7Zc24aiF0GBccP4qlXBnAaaJsAEhW4f2UyRGdjCDUfPRwKUAXb gauravsoni@Gauravs-MacBook-Pro-2.local'
+    sshKeySecureFile: 'portfolio-gaurav'
+    
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'gauravsoni.me'
+    sourceFolder: 'build'
+    contents: '**'
+    targetFolder: '~/public_html/gauravsoni.me'
