@@ -9,7 +9,7 @@ import TechStack from "./components/techStack/techStack";
 import Work from "./components/work/work";
 import stacks from "./config/techStack";
 
-import wallpaper from "./assets/images/wallpaper.jpg";
+import wallpaper from "./assets/images/wallpaper.webp";
 
 const style = {
   content: "",
@@ -70,25 +70,36 @@ class App extends Component {
             <Work
               title="My Portfolio"
               gitUrl="https://github.com/gauravsoni1/portfolio"
-            >              
+            >
               <ul>
                 <li>Showcase my professional activities</li>
                 <li>Learnt to develop custom SVG</li>
-                <li>Custom development without UI Frameworks</li>
+                <li>Auto build and deploy using Azure DevOPS</li>
                 <li>Responsive design</li>
               </ul>
             </Work>
             <Work
               title="Event Registration"
               gitUrl="https://github.com/gauravsoni1/event-registration-REST"
-            >             
+            >
               <ul>
                 <li>Event Registration Portal</li>
                 <li>Developed using MongoDB , Nodejs</li>
                 <li>Testing - used Jest</li>
-                <li>CI / CD - used Travis and Heroku</li>                
+                <li>CI / CD - used Travis and Heroku</li>
               </ul>
-            </Work>            
+            </Work>
+            <Work
+              title="React Datepicker"
+              gitUrl="https://github.com/gauravsoni1/easy-react-datepicker"
+              npmUrl="https://www.npmjs.com/package/easy-react-datepicker"
+            >
+              <ul>
+                <li>Datepicker element for React</li>
+                <li>Single dependency of Moment.js</li>
+                <li>Modular development of plugin</li>
+              </ul>
+            </Work>
           </div>
           <svg
             width="100%"

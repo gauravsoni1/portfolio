@@ -15,6 +15,7 @@ import facebookIcon from "./facebook.png";
 import linkedinIcon from "./linkedin.png";
 import emailIcon from "./email.png";
 import cvIcon from './cv.png';
+import npmLogo from './npm.png';
 
 export {
   angularIcon,
@@ -33,5 +34,6 @@ export {
   facebookIcon,
   linkedinIcon,
   emailIcon,
-  cvIcon
+  cvIcon,
+  npmLogo
 };

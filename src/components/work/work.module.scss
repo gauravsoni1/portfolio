@@ -31,8 +31,14 @@
   margin: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   img{
     height: 35px;
     margin-right: 10px;
   }
+}
+
+.projectLinks{
+  display: flex;
+  align-items: center;
 }
